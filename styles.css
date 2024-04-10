@@ -1,0 +1,373 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: #e2e8f0;
+}
+
+/* entire page */
+.container{
+height: 100vh;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: 1fr auto;
+
+}
+
+/* header section */
+.header{
+background-color: white;
+grid-column: 2 / 6;
+grid-row: 1 / 1;
+align-items:baseline;
+box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); 
+
+}
+
+
+.header-items-upper {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    
+}
+
+/* child items on items-upper */
+.header-items-upper .header-items-left {
+    align-self: left;
+    margin-left: -300px;
+}
+
+.header-items-upper .header-items-right {
+    align-self: right;
+    margin-right: -300px;
+    padding-right: 15px;
+    margin-top: 10px;
+}
+
+
+.header-items-lower {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin-top: 15px;
+}
+
+  /* child items on items-lower */
+.header-items-lower .header-items-left-two {
+    display: flex;
+    align-items: center;
+    margin-left: -370px;
+}
+
+.header-items-lower .header-items-right-two {
+    display: flex;
+    align-items: center;
+    margin-right: -370px;
+}
+
+.header-items-lower #profile-picture {
+    margin-right: 10px; 
+}
+
+.name-titles h2,
+.name-titles h1 {
+    display: block;
+    line-height: 8px;
+    font-size:large;
+    font-weight:900;
+}
+
+.name-titles h1 {
+    font-size:medium;
+}
+
+button{
+    font-size: 1em;
+    border: none;
+    width: 90px;
+    padding: 8px 0;
+    border-radius: 30px;
+    font-size: 0.9em;
+    background-color: #1992d4;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+#search-icon{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+#search{
+    border-radius: 20px;
+    background-color: #e2e8f0;
+    border:none;
+    height: 23px;
+    width: 120;
+    padding-left: -10px;
+}
+
+input:focus {
+    outline:none;
+}
+
+
+#bell-icon{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+#profile{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+#profile-picture{
+    width: 60px;
+    height: 60px;
+}
+
+span{
+    font-size: small;
+    font-weight: 800;
+}
+
+/* side bar navigation section */
+.sidenav{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    grid-row: 1 / 3;
+    width: 250px;
+    background-color: #1992d4;
+    color: white;
+}
+
+.uppernav-menu{
+    margin-top: 15px;
+}
+
+.dashboard-heading {
+    display: grid;
+    grid-template-columns: auto auto; /* Setting columns to auto will make items on the same line */
+}
+
+.dashboard-heading h1 {
+    align-self: center; /* Vertically center align the h1 */
+
+}
+
+#dashboard-svg {
+    height: auto;
+    width: 3.2rem;
+    filter: brightness(0) invert(1);
+    align-self: center; /* Vertically center align the SVG */
+    margin-left: -20px;
+}
+
+#dashboard-icons{
+    width: auto;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.row-icon {
+    display: grid; /* Use grid layout for the row-icon */
+    grid-template-columns: auto auto; /* Set columns to auto */
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start;
+
+}
+
+.row-icon img {
+    width: 1.6em; /* Set width for the image */
+    height: auto; /* Maintain aspect ratio */
+    filter: brightness(0) invert(1); /* Invert the color */
+}
+
+.row-icon h1 {
+    margin-left: 35px; 
+    font-size: 1.1rem;
+    text-align: left; 
+}
+
+.lowernav-menu{
+    margin-top: 35px;
+}
+
+/* main content section */
+.main-content{
+    margin-top: 15px;
+    margin-left: 25px;
+    background-color: #e2e8f0;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3; 
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: auto; /* Change this line */
+    padding: 30px 20px;
+    gap: 25px;
+    width: 100%;
+}
+
+.cards-container-one{
+    display: grid; 
+    grid-template-rows: 1fr; 
+}
+
+.cards-container-one .header-cards, .cards-container-two .header-cards {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.cards-container-one .grid-cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+
+.cards-container-one .card {
+    border: 0px solid black;
+    width: 360px;
+    height: 250px;
+    background-color: white;
+    border-left: #f0b429 solid 8px;
+    border-radius: 10px;
+}
+
+
+.cards-container-two .card {
+    background-color: white;
+    width: 370px;
+    height: 350px;
+}
+
+.card .card-heading{
+    padding: 10px;
+    text-align: left;
+}
+
+.card-heading p {
+    color:grey;
+}
+
+.card .card-icons{
+    text-align:right;
+    padding: 10px;
+}
+
+.card-icons img {
+    width: 28px;
+    height: 28px;
+    padding-left:15px;
+}
+
+.card {
+    position: relative;
+}
+
+.card .card-heading {
+    padding: 10px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-icons {
+    position: absolute; /* Position the icons absolutely */
+    bottom: 0px ; /* Adjust this value to your preference */
+    right: 10px;
+}
+
+.rightside-grid-container {
+    font-size: 15px;
+  
+}
+
+
+.rightside-grid-container .card h2{
+    text-align:left;
+}
+
+.card-heading-two h2{
+    font-size: 1.2rem;
+    text-align: center;
+    text-align: left;
+}
+
+.cards-container-two .card {
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card .trending-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(10%, -50%);
+    margin-bottom: 80px;
+
+}
+
+.trending-card img{
+    width: 60px;
+    height:60px;
+    border-radius:30px;
+}
+
+.trending-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 80px; 
+
+}
+
+.trending-card img {
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+
+    padding-bottom: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+}
+
+.trending-card .text-content {
+    position: absolute;
+    left: calc(60px + 10px); /* Width of the image + gap */
+    top: 15px;
+}
+
+.trending-card h4,
+.trending-card p {
+    margin: 0;
+    font-size: 1rem;
+}
