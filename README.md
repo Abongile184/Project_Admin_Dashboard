@@ -34,4 +34,7 @@ Step 5: Some tips!
     This project does not have to be responsive, but if you’d like to you can expand or shrink the project cards section when resizing the browser window.
     You don’t have to make a pixel perfect match with the design example. Consider this an opportunity to practice your CSS skills with your own designs.
     Don’t forget to push your finished dashboard to GitHub. Use GitHub Pages to publish it to the world!
+![dashboard](https://github.com/user-attachments/assets/d028ddca-82b2-47ba-af28-bb4524d5a401)
+
+
 
